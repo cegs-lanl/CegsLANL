@@ -1,13 +1,10 @@
-﻿<wpf:View x:Class="CegsLL6.Views.AirManifolds"
+﻿<wpf:View x:Class="CegsLANL.Views.AirManifolds"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:local="clr-namespace:CegsLL6.Views"
         xmlns:wpf="http://schemas.aeonhacs.com/wpf"
-        mc:Ignorable="d"
-        Width="225"
-        Height="52">
+        mc:Ignorable="d">
     <Border Background="Transparent" AutomationProperties.HelpText="Air Manifold">
         <StackPanel>
             <Label Content="Air Manifold" HorizontalAlignment="Center" FontSize="10" Margin="0, 10, 0, 0" Padding="0" />
@@ -23,6 +20,8 @@
                 <wpf:Valve HelpText="GR1 Coldfinger Air Valve" Component="vAir_GR1" d:ValveState="Closed" />
                 <wpf:Valve HelpText="GR2 Coldfinger Air Valve" Component="vAir_GR2" d:ValveState="Closed" />
                 <wpf:Valve HelpText="GR3 Coldfinger Air Valve" Component="vAir_GR3" d:ValveState="Closed" />
+                <wpf:Valve HelpText="Spare Air Valve" Component="vAir_Spare" d:ValveState="Closed" />
+                <wpf:Valve HelpText="AP1 Air Valve" Component="vAir_AP1" d:ValveState="Closed" />
                 <wpf:Valve HelpText="GR4 Coldfinger Air Valve" Component="vAir_GR4" d:ValveState="Closed" />
                 <wpf:Valve HelpText="GR5 Coldfinger Air Valve" Component="vAir_GR5" d:ValveState="Closed" />
                 <wpf:Valve HelpText="GR6 Coldfinger Air Valve" Component="vAir_GR6" d:ValveState="Closed" />

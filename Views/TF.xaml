@@ -1,0 +1,34 @@
+﻿<wpf:View x:Class="CegsLANL.Views.TF"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:local="clr-namespace:CegsLANL.Views"
+    xmlns:wpf="http://schemas.aeonhacs.com/wpf"
+    mc:Ignorable="d"
+    Background="{x:Null}">
+    <Canvas Width="305" Height="143">
+        <!--<Canvas Width="148" Height="185" Background="{DynamicResource FittingGrid}" Canvas.Left="-18" Canvas.Top="-18"/>-->
+        <wpf:UnionUT Orientation="Right" Connection1="3/8" Canvas.Left="252" Canvas.Top="129" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <wpf:ConvolutedTubing Data="M0,0 h3 m0,0 h18 m0,0 h3" Canvas.Left="228" Canvas.Top="130" HorizontalAlignment="Center" VerticalAlignment="Top" />
+
+        <wpf:ConvolutedTubing Data="M0,0 v3 m0,0 c 0,20 0,27 22.5,27 m0,0 h3" Canvas.Left="107" Canvas.Top="51" HorizontalAlignment="Center" VerticalAlignment="Top" />
+
+        <wpf:Fitting Data="M0,0 h208" HorizontalAlignment="Left" Canvas.Left="45" VerticalAlignment="Center" />
+        <wpf:ConvolutedTubing Data="M0,0 v-3 m0,0 c 0,-20 10,-28.5 25,-28.5 h10.5 m0,0 h3" Canvas.Left="3" />
+        <wpf:ConvolutedTubing Data="M0,0 h3 m0,0 h45 m0,0 h3" Canvas.Left="254" HorizontalAlignment="Left" VerticalAlignment="Center" />
+
+        <local:TubeFurnace Component="TF1" Canvas.Top="18" VerticalAlignment="Top" Canvas.Left="1" HorizontalAlignment="Center" />
+
+        <wpf:Chamber Component="Section.TF"
+            Data="M38.5,0.5 v29 M12.5,12.5 h52 v17 M38.5,47.5 v17 h43 M64.5,47.5 v17" HorizontalAlignment="Center" Canvas.Left="124" VerticalAlignment="Top" Canvas.Top="69" />
+        <wpf:Stub Orientation="Left" Canvas.Left="224" Canvas.Top="130" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <wpf:Mks722BLowPressure Component="pTF" HelpText="TF pressure sensor" Canvas.Left="157" VerticalAlignment="Top" HorizontalAlignment="Center" Canvas.Top="43" />
+        <wpf:Pressure Component="pTF" HelpText="TF pressure" Canvas.Left="162" RenderTransform="{wpf:AnchorTransform BottomCenter}" ContentStringFormat="0.0" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="39"/>
+        <wpf:Valve Component="vTFFlow" HelpText="TF flow valve" Canvas.Top="98" Canvas.Left="153" VerticalAlignment="Top" HorizontalAlignment="Center" d:ValveState="Closed" >
+            <wpf:Restriction />
+        </wpf:Valve>
+        <wpf:Valve Component="vTFBypass" HelpText="TF bypass valve" Canvas.Top="98" Canvas.Left="179" VerticalAlignment="Top" HorizontalAlignment="Center" d:ValveState="Closed" />
+        <wpf:Valve Component="vTF_IP1" HelpText="TF-IP1 valve" Canvas.Left="205" Canvas.Top="124" VerticalAlignment="Top" HorizontalAlignment="Center" d:ValveState="Closed" />
+    </Canvas>
+</wpf:View>

@@ -1,2 +1,2 @@
-# CegsLL6
-Template for low-level 6 GR x 6 IP Cegs
+# CegsLANL
+Cegs6x1 with in situ cosmogenic support (CEGS LL6X1+1i+VP) 
