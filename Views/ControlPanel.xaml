@@ -127,7 +127,7 @@
             <!--==============================================-->
             <!-- Schematic Interface -->
             <!--==============================================-->
-            <Canvas DockPanel.Dock="Left" Width="1000" Height="450" Margin="0,10,0,80" VerticalAlignment="Top" HorizontalAlignment="Center">
+            <Canvas DockPanel.Dock="Left" Width="940" Height="450" Margin="0,0,60,0" VerticalAlignment="Center" HorizontalAlignment="Center">
                 <local:VS Canvas.Left="431" Canvas.Top="184"/>
                 <local:FTG Canvas.Left="323" Canvas.Top="20"/>
                 <local:TF Canvas.Left="18" Canvas.Top="60" />

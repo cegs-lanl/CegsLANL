@@ -9,7 +9,7 @@
     >
 
     <StackPanel>
-        <wpf:Valve HelpText="LN Supply Valve" Component="vLNSupply" HorizontalAlignment="Right" d:ValveState="Closed" />
+        <wpf:Valve HelpText="LN Supply Valve" Component="vLNSupply1" HorizontalAlignment="Right" d:ValveState="Closed" />
         <Border x:Name="manifold1" BorderBrush="{DynamicResource EdgeBrush}" BorderThickness="1" Background="{DynamicResource FoamBrush}"
             AutomationProperties.HelpText="LN Manifold"
             wpf:View.Component="LNManifold1">

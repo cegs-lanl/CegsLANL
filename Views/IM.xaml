@@ -23,7 +23,7 @@
         <Grid Canvas.Right="17.5" Canvas.Bottom="90" Background="Transparent" ClipToBounds="True" RenderTransform="{wpf:AnchorTransform BottomCenter}"
             wpf:View.Component="pIM" AutomationProperties.HelpText="Inlet manifold pressure">
             <wpf:PortPressureSensor IsHitTestVisible="False" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,-5"/>
-            <wpf:Pressure HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,38" IsHitTestVisible="False"
+            <wpf:Pressure HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,19" IsHitTestVisible="False"
                 Component="pIM" ContentStringFormat="0"/>
         </Grid>
 
