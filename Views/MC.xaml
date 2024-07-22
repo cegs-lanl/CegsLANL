@@ -21,7 +21,7 @@
         <wpf:Chamber Canvas.Top="0" Component="Section.MC" HelpText="Measurement chamber section"
             Data="M17.5,0.5 v52 M0.5,13.5 h34 M0.5,39.5 h34" />
 
-        <wpf:MksDmb Canvas.Left="7" Canvas.Top="-25"
+        <wpf:InficonCDG025D Canvas.Left="9" Canvas.Top="-23"
             Component="pMC" HelpText="Measurement chamber pressure" />
 
         <Grid Canvas.Left="32" Canvas.Top="-3" RenderTransform="{wpf:AnchorTransform BottomLeft}">

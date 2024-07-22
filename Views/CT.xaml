@@ -15,8 +15,8 @@
         </wpf:Valve>
         <Canvas Canvas.Left="27" Canvas.Bottom="72" Width="33" Canvas.Height="50" Background="Transparent"
             wpf:View.Component="pCT" AutomationProperties.HelpText="Coil trap pressure" >
-            <wpf:Mks722BLowPressure Canvas.Left="11" Canvas.Bottom="0" />
-            <wpf:Pressure Canvas.Left="16.5" Canvas.Bottom="30" Component="pCT" ContentStringFormat="0.00" RenderTransform="{wpf:AnchorTransform BottomCenter}" IsHitTestVisible="False"/>
+            <wpf:InficonCDG020D Canvas.Left="8" Canvas.Bottom="1" />
+            <wpf:Pressure Canvas.Left="16.5" Canvas.Bottom="37" Component="pCT" ContentStringFormat="0.00" RenderTransform="{wpf:AnchorTransform BottomCenter}" IsHitTestVisible="False"/>
         </Canvas>
         <wpf:FTC Canvas.Left="36" Canvas.Top="80" Width="35" Height="42"
             Component="ftcCT" HelpText="Coil trap coldfinger" />
