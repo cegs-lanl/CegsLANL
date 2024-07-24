@@ -55,21 +55,21 @@
                 Data="M0.5,0.5 h8 v5 h-8 z" />
 
                 <!--Foreline (Port pressure sensor version)-->
-                <!--<wpf:Chamber Canvas.Left="47" Canvas.Top="18" Data="M17.5,0.5 v60 M0.5,43.5 h21" HelpText="Foreline" />
+                <wpf:Chamber Canvas.Left="47" Canvas.Top="18" Data="M17.5,0.5 v60 M0.5,43.5 h21" HelpText="Foreline" />
                 <wpf:PortPressureSensor Canvas.Left="64" Canvas.Top="30" Panel.ZIndex="-1" LayoutTransform="{DynamicResource Right}" IsHitTestVisible="False" />
                 <wpf:Pressure Canvas.Left="84" Canvas.Top="35.5" RenderTransform="{wpf:AnchorTransform MiddleLeft}" IsHitTestVisible="False"
                         Component="pForeline" ContentStringFormat="0.0" />
                 <Rectangle Canvas.Left="68" Canvas.Top="26" Width="49" Height="19" d:Fill="#2200FFFF" Fill="Transparent"
-                    wpf:View.Component="pForeline" AutomationProperties.HelpText="Foreline pressure" />-->
+                    wpf:View.Component="pForeline" AutomationProperties.HelpText="Foreline pressure" />
 
                 <!--Foreline (Mks901P version)-->
-                <wpf:Chamber Canvas.Left="47" Canvas.Top="18" Data="M17.5,0.5 v60 M0.5,43.5 h21 M17.5,17.5 h17" HelpText="Foreline"/>
+                <!--<wpf:Chamber Canvas.Left="47" Canvas.Top="18" Data="M17.5,0.5 v60 M0.5,43.5 h21 M17.5,17.5 h17" HelpText="Foreline"/>
                 <Canvas Canvas.Left="82" Canvas.Top="8" Width="33" Height="35" Background="Transparent"
                     wpf:View.Component="pForeline" AutomationProperties.HelpText="Foreline pressure">
                     <wpf:Mks901P Canvas.Left="14" Canvas.Bottom="1" RenderTransform="{DynamicResource Right}" IsHitTestVisible="False" />
                     <wpf:Pressure Canvas.Left="0" Canvas.Bottom="18" RenderTransform="{wpf:AnchorTransform BottomLeft}" IsHitTestVisible="False"
                         Component="pForeline" ContentStringFormat="0.0" />
-                </Canvas>
+                </Canvas>-->
 
                 <!--Ambient-->
                 <wpf:Arrow Canvas.Left="87" Canvas.Top="116" Orientation="Right" />
