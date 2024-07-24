@@ -36,29 +36,6 @@ namespace AeonHacs.Components
             AmbientLog.AddNewValue("HC2.CJ", -1, "0.0",
                 () => HeaterController2.ColdJunctionTemperature);
 
-
-            GRSTLog = Find<DataLog>("GRSampleTemperatureLog");
-            // These components are needed to allow the inclusion of
-            // non-INamedValue properties of theirs in logged data.
-            GR1 = Find<GraphiteReactor>("GR1");
-            GR2 = Find<GraphiteReactor>("GR2");
-            GR3 = Find<GraphiteReactor>("GR3");
-            GR4 = Find<GraphiteReactor>("GR4");
-            GR5 = Find<GraphiteReactor>("GR5");
-            GR6 = Find<GraphiteReactor>("GR6");
-            GRSTLog.AddNewValue("GR1.SampleTemperature", 1, "0.0",
-                () => GR1.SampleTemperature);
-            GRSTLog.AddNewValue("GR2.SampleTemperature", 1, "0.0",
-                () => GR2.SampleTemperature);
-            GRSTLog.AddNewValue("GR3.SampleTemperature", 1, "0.0",
-                () => GR3.SampleTemperature);
-            GRSTLog.AddNewValue("GR4.SampleTemperature", 1, "0.0",
-                () => GR4.SampleTemperature);
-            GRSTLog.AddNewValue("GR5.SampleTemperature", 1, "0.0",
-                () => GR5.SampleTemperature);
-            GRSTLog.AddNewValue("GR6.SampleTemperature", 1, "0.0",
-                () => GR6.SampleTemperature);
-
             #endregion Logs
         }
 
