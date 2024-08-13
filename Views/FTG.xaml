@@ -1,0 +1,25 @@
+﻿<wpf:View x:Class="CegsLANL.Views.FTG"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:wpf="http://schemas.aeonhacs.com/wpf"
+    mc:Ignorable="d"
+    Background="{x:Null}">
+    <Canvas Width="108" Height="87">
+        <wpf:Chamber Data="M0.5,43.5 h34 M52.5,17.5 h17 v52 h-17 m0,-26 h17"
+                   Canvas.Right="0"
+                   Component="FTG" HelpText="FlowThrough Gas" />
+        <wpf:Stub Orientation="Left" FittingSize="3/8" Canvas.Right="104" Canvas.Top="39" />
+        <wpf:GasSupply GasName="He" HelpText="Helium gas supply" Valve="vHe_FTG" 
+                     Orientation="Left" Canvas.Right="33" Canvas.Top="7" />
+        <wpf:GasSupply GasName="O2" HelpText="Oxygen gas supply" Valve="vO2_FTG"
+                     Orientation="Left" Canvas.Right="33" Canvas.Top="59" />
+        <wpf:Valve d:ValveState="Closed"
+            Component="vFTG_TF" HelpText="FTG-TF valve" Canvas.Right="85" Canvas.Top="34" />
+
+        <wpf:Valve Component="vFtgFlow" HelpText="FTG flow valve" Canvas.Top="34" Canvas.Right="33" d:ValveState="Closed" >
+            <wpf:Restriction Orientation="Horizontal"/>
+        </wpf:Valve>
+    </Canvas>
+</wpf:View>

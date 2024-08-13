@@ -2,14 +2,14 @@
     <PropertyGroup>
         <AssemblyVersion>3.2.0.0</AssemblyVersion>
         <PackageVersion>$(AssemblyVersion)</PackageVersion>
-        <Title>Aeon Laboratories Cegs LL6 Application</Title>
+        <Title>Aeon Laboratories Cegs LANL Application</Title>
         <Description>HACS-based Carbon Extraction and Graphitization System</Description>
         <Company>Aeon Laboratories</Company>
         <Authors>Jim Wilson, Tyler Wilson</Authors>
         <Copyright>$(Company), 2022</Copyright>
-        <AssemblyName>CegsLL6</AssemblyName>
-        <RepositoryUrl>https://github.com/AeonLaboratories/CegsLL6</RepositoryUrl>
-        <RootNamespace>CegsLL6</RootNamespace>
+        <AssemblyName>CegsLANL</AssemblyName>
+        <RepositoryUrl>https://github.com/cegs-lanl/CegsLANL</RepositoryUrl>
+        <RootNamespace>CegsLANL</RootNamespace>
 
         <UseWPF>true</UseWPF>
     <OutputType>WinExe</OutputType>

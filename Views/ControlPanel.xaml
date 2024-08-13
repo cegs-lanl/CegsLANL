@@ -1,14 +1,14 @@
-﻿<wpf:ControlPanel x:TypeArguments="cegs:CegsLL6" x:Class="CegsLL6.Views.ControlPanel"
+﻿<wpf:ControlPanel x:TypeArguments="cegs:CegsLANL" x:Class="CegsLANL.Views.ControlPanel"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:cegs="clr-namespace:AeonHacs.Components"
-        xmlns:local="clr-namespace:CegsLL6.Views"
+        xmlns:local="clr-namespace:CegsLANL.Views"
         xmlns:wpf="http://schemas.aeonhacs.com/wpf"
         mc:Ignorable="d"
-        d:DesignWidth="1020"
-        d:DesignHeight="450">
+        d:DesignWidth="1300"
+        d:DesignHeight="500">
 
     <wpf:ControlPanel.Resources>
         <wpf:TimeSpanToStringConverter x:Key="TimeSpanConverter" />
@@ -22,7 +22,7 @@
     <!--==============================================-->
     <Grid>
         <!-- Simplify references to Cegs properties -->
-        <wpf:View x:Name="Cegs" Component="CegsLL6" Visibility="Collapsed" />
+        <wpf:View x:Name="Cegs" Component="CegsLANL" Visibility="Collapsed" />
 
         <!-- System Uptime -->
         <StackPanel Margin="10" HorizontalAlignment="Left" VerticalAlignment="Top">
@@ -127,20 +127,25 @@
             <!--==============================================-->
             <!-- Schematic Interface -->
             <!--==============================================-->
-            <Canvas DockPanel.Dock="Left" Width="760" Height="330" Margin="0,10,0,80" VerticalAlignment="Top" HorizontalAlignment="Center">
-                <local:VS Canvas.Left="223" Canvas.Top="154"/>
-                <wpf:IM6 Canvas.Left="0" Canvas.Top="49" />
-                <wpf:CT Canvas.Left="267" Canvas.Top="74" />
-                <wpf:VTT Canvas.Left="389" Canvas.Top="133" />
-                <wpf:MC Canvas.Left="441" Canvas.Top="98" />
-                <local:Split Canvas.Left="493" Canvas.Top="133" />
-                <wpf:GM6 Canvas.Left="532" Canvas.Top="49" />
+            <Canvas DockPanel.Dock="Left" Width="940" Height="450" Margin="0,0,60,0" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <local:VS Canvas.Left="431" Canvas.Top="184" />
+                <local:FTG Canvas.Left="323" Canvas.Top="20" />
+                <local:TF Canvas.Left="18" Canvas.Top="60" />
+                <wpf:IM2 Canvas.Left="208" Canvas.Top="148" />
+                <wpf:CT Canvas.Left="475" Canvas.Top="104" />
+                <wpf:VTT Canvas.Left="597" Canvas.Top="163" />
+                <wpf:MC Canvas.Left="649" Canvas.Top="128" />
+                <local:Split Canvas.Left="701" Canvas.Top="150" />
+                <local:d13C Canvas.Left="736" Canvas.Top="98" />
+                <local:AM Canvas.Left="743" Canvas.Top="27" />
+                <wpf:GM6 Canvas.Left="787" Canvas.Top="79" />
 
-                <wpf:Valve HelpText="IM-CT valve" Component="vIM_CT" Canvas.Left="249" Canvas.Top="128" d:ValveState="Opened" />
-                <wpf:Valve HelpText="CT-VTT valve" Component="vCT_VTT" Canvas.Left="371" Canvas.Top="128" d:ValveState="Opened" />
-                <wpf:Valve HelpText="VTT-MC valve" Component="vVTT_MC" Canvas.Left="423" Canvas.Top="128" d:ValveState="Opened" />
-                <wpf:Valve HelpText="MC-Split valve" Component="vMC_Split" Canvas.Left="475" Canvas.Top="128" d:ValveState="Opened" />
-                <wpf:Valve HelpText="Split-GM valve" Component="vGM_Split" Canvas.Left="514" Canvas.Top="128" d:ValveState="Opened" />
+                <wpf:Valve HelpText="IM-CT valve" Component="vIM_CT" Canvas.Left="457" Canvas.Top="158" d:ValveState="Opened" />
+                <wpf:Valve HelpText="CT-VTT valve" Component="vCT_VTT" Canvas.Left="579" Canvas.Top="158" d:ValveState="Opened" />
+                <wpf:Valve HelpText="VTT-MC valve" Component="vVTT_MC" Canvas.Left="631" Canvas.Top="158" d:ValveState="Opened" />
+                <wpf:Valve HelpText="MC-Split valve" Component="vMC_Split" Canvas.Left="683" Canvas.Top="158" d:ValveState="Opened" />
+                <wpf:Valve HelpText="Split-d13C valve" Component="vSplit_d13C" Canvas.Left="743" Canvas.Top="132" d:ValveState="Opened" />
+                <wpf:Valve HelpText="Split-GM valve" Component="vSplit_GM" Canvas.Left="769" Canvas.Top="158" d:ValveState="Opened" />
                 
             </Canvas>
         </DockPanel>

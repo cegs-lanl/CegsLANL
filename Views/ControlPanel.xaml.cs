@@ -11,12 +11,12 @@ using System.Windows.Data;
 using System.Windows.Media;
 using System.Windows.Threading;
 
-namespace CegsLL6.Views
+namespace CegsLANL.Views
 {
     /// <summary>
     /// Interaction logic for ControlPanel.xaml
     /// </summary>
-    public partial class ControlPanel : AeonHacs.Wpf.Views.ControlPanel<AeonHacs.Components.CegsLL6>
+    public partial class ControlPanel : AeonHacs.Wpf.Views.ControlPanel<AeonHacs.Components.CegsLANL>
     {
         ResourceDictionary Preferences = (ResourceDictionary)Application.Current.Resources["PreferencesDictionary"];
 
