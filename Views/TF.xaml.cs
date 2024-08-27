@@ -2,16 +2,15 @@
 using AeonHacs.Wpf.Views;
 using System.Windows;
 
-namespace CegsLANL.Views
+namespace CegsLANL.Views;
+
+/// <summary>
+/// Interaction logic for TF.xaml
+/// </summary>
+public partial class TF : View
 {
-    /// <summary>
-    /// Interaction logic for TF.xaml
-    /// </summary>
-    public partial class TF : View
+    public TF()
     {
-        public TF()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
     }
 }

@@ -11,16 +11,16 @@
         <wpf:Union Orientation="Right" Connection1="1/4" Canvas.Left="252" Canvas.Top="129" />
         <wpf:ConvolutedTubing Data="M0,0 h3 m0,0 h18 m0,0 h3" Canvas.Left="228" Canvas.Top="130" />
 
-        <wpf:ConvolutedTubing Data="M0,0 v3 m0,0 c 0,20 0,27 22.5,27 m0,0 h3" Canvas.Left="107" Canvas.Top="51" />
+        <wpf:ConvolutedTubing Data="M0,0 v3 m0,0 c 0,20 0,27.5 22.5,27.5 m0,0 h3" Canvas.Left="107" Canvas.Top="51" />
 
         <wpf:Fitting Data="M0,0 h208" Canvas.Left="45" />
-        <wpf:ConvolutedTubing Data="M0,0 v-3 m0,0 c 0,-20 10,-28.5 25,-28.5 h10.5 m0,0 h3" Canvas.Left="3" />
+        <wpf:ConvolutedTubing Data="M0,0 v-3 m0,0 c 0,-20 10,-28.5 25.5,-28.5 h10 m0,0 h3" Canvas.Left="3" />
         <wpf:ConvolutedTubing Data="M0,0 h3 m0,0 h45 m0,0 h3" Canvas.Left="254" />
 
         <wpf:TubeFurnace Type="Carbolite" Component="TF1" Canvas.Left="1" Canvas.Top="18" />
 
         <wpf:Chamber Component="Section.TF"
-            Data="M38.5,0.5 v29 M12.5,12.5 h52 v17 M38.5,47.5 v17 h43 M64.5,47.5 v17" Canvas.Left="124" Canvas.Top="69" />
+            Data="M38,0 v29 M12,12 h52 v17 M38,47 v17 h43 M64,47 v17" Canvas.Left="136" Canvas.Top="69" />
         <wpf:Stub Orientation="Right" Canvas.Left="224" Canvas.Top="130" />
         <wpf:StackingPanel Width="59" Canvas.Left="133" Canvas.Bottom="74" Spacing="5">
             <wpf:PressureSensor Type="MKS_722_HP" Component="pTF" HelpText="TF pressure sensor" />

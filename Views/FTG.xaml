@@ -6,20 +6,24 @@
     xmlns:wpf="http://schemas.aeonhacs.com/wpf"
     mc:Ignorable="d"
     Background="{x:Null}">
-    <Canvas Width="108" Height="87">
-        <wpf:Chamber Data="M0.5,43.5 h34 M52.5,17.5 h17 v52 h-17 m0,-26 h17"
-                   Canvas.Right="0"
-                   Component="FTG" HelpText="FlowThrough Gas" />
-        <wpf:Stub Orientation="Left" FittingSize="3/8" Canvas.Right="104" Canvas.Top="39" />
-        <wpf:GasSupply GasName="He" HelpText="Helium gas supply" Valve="vHe_FTG" 
-                     Orientation="Left" Canvas.Right="33" Canvas.Top="7" />
-        <wpf:GasSupply GasName="O2" HelpText="Oxygen gas supply" Valve="vO2_FTG"
-                     Orientation="Left" Canvas.Right="33" Canvas.Top="59" />
-        <wpf:Valve d:ValveState="Closed"
-            Component="vFTG_TF" HelpText="FTG-TF valve" Canvas.Right="85" Canvas.Top="34" />
 
-        <wpf:Valve Component="vFtgFlow" HelpText="FTG flow valve" Canvas.Top="34" Canvas.Right="33" d:ValveState="Closed" >
+    <Canvas Width="96" Height="72">
+        <wpf:Chamber Data="M0,0 v-26 h-17 M0,0 h-17 M0,0 v26 h-17 M-35,0 h-34" Canvas.Top="6" Canvas.Right="0"
+                Component="FTG" HelpText="FlowThrough Gas" />
+
+        <wpf:GasSupply Orientation="Left" Canvas.Right="21" Canvas.Top="0"
+                GasName="He" HelpText="Helium gas supply" Valve="vHe_FTG" />
+
+        <wpf:Valve Canvas.Right="21" Canvas.Top="27" d:ValveState="Closed"
+                Component="vFtgFlow" HelpText="FTG flow valve">
             <wpf:Restriction Orientation="Horizontal"/>
         </wpf:Valve>
+        <wpf:Valve Canvas.Right="73" Canvas.Top="27" d:ValveState="Closed"
+                Component="vFTG_TF" HelpText="FTG-TF valve" />
+        <wpf:Stub Orientation="Left" FittingSize="3/8" Canvas.Right="92" Canvas.Top="32" />
+
+        <wpf:GasSupply Orientation="Left" Canvas.Right="21" Canvas.Top="52"
+                GasName="O2" HelpText="Oxygen gas supply" Valve="vO2_FTG" />
     </Canvas>
+
 </wpf:View>

@@ -129,14 +129,14 @@
             <!--==============================================-->
             <Canvas DockPanel.Dock="Left" Width="940" Height="450" Margin="0,0,60,0" VerticalAlignment="Center" HorizontalAlignment="Center">
                 <local:VS Canvas.Left="431" Canvas.Top="184" />
-                <local:FTG Canvas.Left="323" Canvas.Top="20" />
+                <local:FTG Canvas.Left="323" Canvas.Top="27" />
                 <local:TF Canvas.Left="18" Canvas.Top="60" />
                 <wpf:IM2 Canvas.Left="208" Canvas.Top="148" />
-                <wpf:CT Canvas.Left="475" Canvas.Top="104" />
+                <wpf:CT Canvas.Left="475" Canvas.Top="154" />
                 <wpf:VTT Canvas.Left="597" Canvas.Top="163" />
                 <wpf:MC Canvas.Left="649" Canvas.Top="128" />
-                <local:Split Canvas.Left="701" Canvas.Top="150" />
-                <local:d13C Canvas.Left="736" Canvas.Top="98" />
+                <wpf:Split Data="M0,0 h68 M51,0 v-17" Canvas.Left="701" Canvas.Top="150" />
+                <wpf:d13C Data="M0,0 v-34" Canvas.Left="748" Canvas.Top="98" />
                 <local:AM Canvas.Left="743" Canvas.Top="27" />
                 <wpf:GM6 Canvas.Left="787" Canvas.Top="79" />
 

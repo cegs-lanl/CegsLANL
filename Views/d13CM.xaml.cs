@@ -3,11 +3,11 @@
 namespace CegsLANL.Views;
 
 /// <summary>
-/// Interaction logic for FTG.xaml
+/// Interaction logic for AM.xaml
 /// </summary>
-public partial class FTG : View
+public partial class d13CM : View
 {
-    public FTG()
+    public d13CM()
     {
         InitializeComponent();
     }
