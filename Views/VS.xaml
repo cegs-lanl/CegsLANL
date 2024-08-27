@@ -37,9 +37,9 @@
             <wpf:Ambient Canvas.Left="107" Canvas.Top="102" />
         </Canvas>
 
-        <wpf:Valve Canvas.Left="0" Canvas.Top="0" Component="vIM_VM" HelpText="IM-VM valve" d:ValveState="Opened" />
-        <wpf:Valve Canvas.Left="124" Canvas.Top="0" Component="vCT_VM" HelpText="CT-VM valve" d:ValveState="Opened" />
-        <wpf:Valve Canvas.Left="364" Canvas.Top="0" Component="vGM_VM" HelpText="GM-VM valve" d:ValveState="Opened" />
+        <wpf:Valve Canvas.Left="0" Canvas.Top="0" Component="vIM_VM" HelpText="IM-VM valve" />
+        <wpf:Valve Canvas.Left="124" Canvas.Top="0" Component="vCT_VM" HelpText="CT-VM valve" />
+        <wpf:Valve Canvas.Left="364" Canvas.Top="0" Component="vGM_VM" HelpText="GM-VM valve" />
     </Canvas>
 
 </wpf:View>

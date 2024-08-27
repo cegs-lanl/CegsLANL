@@ -9,17 +9,17 @@
     <StackPanel>
         <wpf:Valve Component="{Binding Component.LNSupplyValve, ElementName=manifold1}" HelpText="LN Supply Valve" HorizontalAlignment="Right" d:ValveState="Closed" />
         <wpf:LNManifold x:Name="manifold1" Component="LNManifold" HelpText="LN Manifold">
-            <wpf:Valve Component="vLN_CT" HelpText="CT LN valve" d:ValveState="Closed" />
-            <wpf:Valve Component="vLN_VTC" HelpText="VTT LN valve" d:ValveState="Closed" />
-            <wpf:Valve Component="vLN_MC" HelpText="MC LN valve" d:ValveState="Closed" />
-            <wpf:Valve Component="vLN_GR1" HelpText="GR1 LN valve" d:ValveState="Closed" />
-            <wpf:Valve Component="vLN_GR2" HelpText="GR2 LN valve" d:ValveState="Closed" />
-            <wpf:Valve Component="vLN_GR3" HelpText="GR3 LN valve" d:ValveState="Closed" />
-            <wpf:Valve Component="vLN_Spare" HelpText="Spare LN valve" d:ValveState="Closed" />
-            <wpf:Valve Component="vLN_AP1" HelpText="AP1 LN valve" d:ValveState="Closed" />
-            <wpf:Valve Component="vLN_GR4" HelpText="GR4 LN valve" d:ValveState="Closed" />
-            <wpf:Valve Component="vLN_GR5" HelpText="GR5 LN valve" d:ValveState="Closed" />
-            <wpf:Valve Component="vLN_GR6" HelpText="GR6 LN valve" d:ValveState="Closed" />
+            <wpf:Valve Component="vLN_CT" HelpText="CT LN valve" />
+            <wpf:Valve Component="vLN_VTC" HelpText="VTT LN valve" />
+            <wpf:Valve Component="vLN_MC" HelpText="MC LN valve" />
+            <wpf:Valve Component="vLN_GR1" HelpText="GR1 LN valve" />
+            <wpf:Valve Component="vLN_GR2" HelpText="GR2 LN valve" />
+            <wpf:Valve Component="vLN_GR3" HelpText="GR3 LN valve" />
+            <wpf:Valve Component="vLN_Spare" HelpText="Spare LN valve" />
+            <wpf:Valve Component="vLN_AP1" HelpText="AP1 LN valve" />
+            <wpf:Valve Component="vLN_GR4" HelpText="GR4 LN valve" />
+            <wpf:Valve Component="vLN_GR5" HelpText="GR5 LN valve" />
+            <wpf:Valve Component="vLN_GR6" HelpText="GR6 LN valve" />
         </wpf:LNManifold>
 
         <StackPanel Background="Transparent" AutomationProperties.HelpText="Air manifold">
