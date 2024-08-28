@@ -6,9 +6,7 @@
         xmlns:cegs="clr-namespace:AeonHacs.Components"
         xmlns:local="clr-namespace:CegsLANL.Views"
         xmlns:wpf="http://schemas.aeonhacs.com/wpf"
-        mc:Ignorable="d"
-        d:DesignWidth="1300"
-        d:DesignHeight="500">
+        mc:Ignorable="d">
 
     <wpf:ControlPanel.Resources>
         <wpf:TimeSpanToStringConverter x:Key="TimeSpanConverter" />

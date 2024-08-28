@@ -13,11 +13,15 @@
       "Steps": [
         {
           "Name": "Admit Dead CO2 into MC",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Measure, etc.",
-          "Description": null
+          "Description": ""
+        },
+        {
+          "Name": "Open and evacuate line",
+          "Description": ""
         }
       ],
       "CheckList": [
@@ -31,19 +35,19 @@
       "Steps": [
         {
           "Name": "Flush Inlet Port",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Admit O2 into Inlet Port",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Heat Quartz and Open Line",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Evacuate Inlet Port",
-          "Description": null
+          "Description": ""
         },
         {
           "$type": "AeonHacs.Components.CombustionStep, AeonHacs.Core",
@@ -53,11 +57,11 @@
           "OpenLine": true,
           "WaitForSetpoint": false,
           "Name": "Pre-Burn",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Discard IP gases",
-          "Description": null
+          "Description": ""
         },
         {
           "$type": "AeonHacs.Components.CombustionStep, AeonHacs.Core",
@@ -67,19 +71,19 @@
           "OpenLine": true,
           "WaitForSetpoint": true,
           "Name": "Combust",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Turn off IP furnaces",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Collect, etc.",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Open and evacuate line",
-          "Description": null
+          "Description": ""
         }
       ],
       "CheckList": [
@@ -94,15 +98,15 @@
       "Steps": [
         {
           "Name": "Flush Inlet Port",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Admit O2 into Inlet Port",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Heat Quartz and Open Line",
-          "Description": null
+          "Description": ""
         },
         {
           "$type": "AeonHacs.Components.CombustionStep, AeonHacs.Core",
@@ -112,19 +116,19 @@
           "OpenLine": false,
           "WaitForSetpoint": true,
           "Name": "Combust",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Turn off IP furnaces",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Collect, etc.",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Open and evacuate line",
-          "Description": null
+          "Description": ""
         }
       ],
       "CheckList": [
@@ -139,19 +143,19 @@
       "Steps": [
         {
           "Name": "Flush Inlet Port",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Admit O2 into Inlet Port",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Heat Quartz and Open Line",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Discard IP gases",
-          "Description": null
+          "Description": ""
         },
         {
           "$type": "AeonHacs.Components.CombustionStep, AeonHacs.Core",
@@ -161,11 +165,11 @@
           "OpenLine": true,
           "WaitForSetpoint": false,
           "Name": "Pre-Burn",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Discard IP gases",
-          "Description": null
+          "Description": ""
         },
         {
           "$type": "AeonHacs.Components.CombustionStep, AeonHacs.Core",
@@ -175,19 +179,19 @@
           "OpenLine": true,
           "WaitForSetpoint": true,
           "Name": "Combust",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Turn off IP furnaces",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Collect, etc.",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Open and evacuate line",
-          "Description": null
+          "Description": ""
         }
       ],
       "CheckList": [
@@ -202,11 +206,11 @@
       "Steps": [
         {
           "Name": "Collect, etc.",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Open and evacuate line",
-          "Description": null
+          "Description": ""
         }
       ],
       "CheckList": [
@@ -220,7 +224,7 @@
       "Steps": [
         {
           "Name": "Flush Inlet Port",
-          "Description": null
+          "Description": ""
         },
         {
           "$type": "AeonHacs.Components.CombustionStep, AeonHacs.Core",
@@ -230,11 +234,11 @@
           "OpenLine": false,
           "WaitForSetpoint": true,
           "Name": "Combust",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Turn Off CC Furnaces",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Wait for operator",
@@ -253,15 +257,15 @@
       "Steps": [
         {
           "Name": "Collect CO2 from InletPort",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Extract",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Measure",
-          "Description": null
+          "Description": ""
         }
       ],
       "CheckList": []
@@ -272,15 +276,15 @@
       "Steps": [
         {
           "Name": "Admit sealed CO2 to InletPort",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Collect, etc.",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Open and evacuate line",
-          "Description": null
+          "Description": ""
         }
       ],
       "CheckList": [
@@ -294,11 +298,11 @@
       "Steps": [
         {
           "Name": "Collect, etc.",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Open and evacuate line",
-          "Description": null
+          "Description": ""
         }
       ],
       "CheckList": [
@@ -312,11 +316,11 @@
       "Steps": [
         {
           "Name": "Flush Inlet Port",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Evacuate Inlet Port",
-          "Description": null
+          "Description": ""
         },
         {
           "$type": "AeonHacs.Components.CombustionStep, AeonHacs.Core",
@@ -326,23 +330,23 @@
           "OpenLine": true,
           "WaitForSetpoint": false,
           "Name": "Pre-Burn",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Turn off IP furnaces",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Discard IP gases",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Close IP",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Open and evacuate line",
-          "Description": null
+          "Description": ""
         }
       ],
       "CheckList": [
@@ -355,19 +359,19 @@
       "Steps": [
         {
           "Name": "Flush Inlet Port",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Admit O2 into Inlet Port",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Heat Quartz and Open Line",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Discard IP gases",
-          "Description": null
+          "Description": ""
         },
         {
           "$type": "AeonHacs.Components.CombustionStep, AeonHacs.Core",
@@ -377,11 +381,11 @@
           "OpenLine": true,
           "WaitForSetpoint": false,
           "Name": "Pre-Burn",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Discard IP gases",
-          "Description": null
+          "Description": ""
         },
         {
           "$type": "AeonHacs.Components.CombustionStep, AeonHacs.Core",
@@ -391,23 +395,23 @@
           "OpenLine": true,
           "WaitForSetpoint": true,
           "Name": "Combust",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Turn off IP furnaces",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Collect CO2 from InletPort",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Extract",
-          "Description": null
+          "Description": ""
         },
         {
           "Name": "Measure",
-          "Description": null
+          "Description": ""
         }
       ],
       "CheckList": [
@@ -891,7 +895,6 @@
       "Resolution": 0.01,
       "ResolutionIsProportional": true,
       "Filter": null,
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -950,7 +953,6 @@
         "Power": 1.9,
         "StepChange": 0.002
       },
-      "Interpolator": null,
       "Conversion": {
         "Name": "VoltageConversion",
         "Operations": [
@@ -1000,7 +1002,6 @@
         "Power": 1.2,
         "StepChange": 0.003
       },
-      "Interpolator": null,
       "Conversion": {
         "Name": "VoltageCorrection",
         "Operations": [
@@ -1100,7 +1101,6 @@
         "Power": 2.0,
         "StepChange": 0.01
       },
-      "Interpolator": null,
       "Conversion": {
         "Name": "VoltageCorrection",
         "Operations": [
@@ -1195,7 +1195,6 @@
         "Power": 2.0,
         "StepChange": 0.015
       },
-      "Interpolator": null,
       "Conversion": {
         "Name": "VoltageCorrection",
         "Operations": [
@@ -1245,7 +1244,6 @@
         "Power": 2.0,
         "StepChange": 0.01
       },
-      "Interpolator": null,
       "Conversion": {
         "Name": "VoltageCorrection",
         "Operations": [
@@ -1345,7 +1343,6 @@
         "Power": 1.0,
         "StepChange": 0.001
       },
-      "Interpolator": null,
       "Conversion": {
         "Name": null,
         "Operations": [
@@ -1488,7 +1485,6 @@
         "Power": 2.5,
         "StepChange": 0.2
       },
-      "Interpolator": null,
       "Conversion": {
         "Name": null,
         "Operations": [
@@ -1559,7 +1555,6 @@
         "Power": 2.0,
         "StepChange": 0.01
       },
-      "Interpolator": null,
       "Conversion": {
         "Name": "VoltageConversion",
         "Operations": [
@@ -1604,7 +1599,6 @@
         "Power": 2.0,
         "StepChange": 0.015
       },
-      "Interpolator": null,
       "Conversion": {
         "Name": "VoltageConversion",
         "Operations": [
@@ -1649,7 +1643,6 @@
         "Power": 2.0,
         "StepChange": 0.015
       },
-      "Interpolator": null,
       "Conversion": {
         "Name": "VoltageConversion",
         "Operations": [
@@ -1694,7 +1687,6 @@
         "Power": 2.0,
         "StepChange": 0.015
       },
-      "Interpolator": null,
       "Conversion": {
         "Name": "VoltageConversion",
         "Operations": [
@@ -1739,7 +1731,6 @@
         "Power": 2.0,
         "StepChange": 0.015
       },
-      "Interpolator": null,
       "Conversion": {
         "Name": "VoltageConversion",
         "Operations": [
@@ -1784,7 +1775,6 @@
         "Power": 2.0,
         "StepChange": 0.02
       },
-      "Interpolator": null,
       "Conversion": {
         "Name": "VoltageConversion",
         "Operations": [
@@ -1829,7 +1819,6 @@
         "Power": 2.0,
         "StepChange": 0.015
       },
-      "Interpolator": null,
       "Conversion": {
         "Name": "VoltageConversion",
         "Operations": [
@@ -1873,7 +1862,6 @@
         "Power": 2.0,
         "StepChange": 0.008
       },
-      "Interpolator": null,
       "Conversion": {
         "Name": "VoltageConversion",
         "Operations": [
@@ -1970,7 +1958,6 @@
         "Power": 2.0,
         "StepChange": 0.2
       },
-      "Interpolator": null,
       "Conversion": {
         "Name": null,
         "Operations": []
@@ -2002,7 +1989,6 @@
         "Power": 2.0,
         "StepChange": 0.05
       },
-      "Interpolator": null,
       "Conversion": {
         "Name": null,
         "Operations": []
@@ -2034,7 +2020,6 @@
         "Power": 2.0,
         "StepChange": 0.05
       },
-      "Interpolator": null,
       "Conversion": {
         "Name": null,
         "Operations": []
@@ -2096,7 +2081,6 @@
         "Power": 1.2,
         "StepChange": 3.0
       },
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -2123,7 +2107,6 @@
         "Power": 1.2,
         "StepChange": 3.0
       },
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -2150,7 +2133,6 @@
         "Power": 1.2,
         "StepChange": 3.0
       },
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -2177,7 +2159,6 @@
         "Power": 1.2,
         "StepChange": 3.0
       },
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -2204,7 +2185,6 @@
         "Power": 1.2,
         "StepChange": 3.0
       },
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -2231,7 +2211,6 @@
         "Power": 1.2,
         "StepChange": 3.0
       },
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -2258,7 +2237,6 @@
         "Power": 1.2,
         "StepChange": 3.0
       },
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -2285,7 +2263,6 @@
         "Power": 1.2,
         "StepChange": 3.0
       },
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -2312,7 +2289,6 @@
         "Power": 1.2,
         "StepChange": 3.0
       },
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -2339,7 +2315,6 @@
         "Power": 1.2,
         "StepChange": 3.0
       },
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -2366,7 +2341,6 @@
         "Power": 1.2,
         "StepChange": 3.0
       },
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -2393,7 +2367,6 @@
         "Power": 1.2,
         "StepChange": 3.0
       },
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -2420,7 +2393,6 @@
         "Power": 1.2,
         "StepChange": 3.0
       },
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -2447,7 +2419,6 @@
         "Power": 1.2,
         "StepChange": 3.0
       },
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -2474,7 +2445,6 @@
         "Power": 1.2,
         "StepChange": 3.0
       },
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -2501,7 +2471,6 @@
         "Power": 1.2,
         "StepChange": 5.0
       },
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -2528,7 +2497,6 @@
         "Power": 1.2,
         "StepChange": 5.0
       },
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -2555,7 +2523,6 @@
         "Power": 1.2,
         "StepChange": 3.0
       },
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -2582,7 +2549,6 @@
         "Power": 1.2,
         "StepChange": 5.0
       },
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -2609,7 +2575,6 @@
         "Power": 1.2,
         "StepChange": 5.0
       },
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -2663,7 +2628,6 @@
         "Power": 1.2,
         "StepChange": 5.0
       },
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -2690,7 +2654,6 @@
         "Power": 1.2,
         "StepChange": 3.0
       },
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -2737,7 +2700,6 @@
       "Resolution": 0.01,
       "ResolutionIsProportional": false,
       "Filter": null,
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": {
         "Name": null,
@@ -5162,8 +5124,6 @@
       "MaximumSetpoint": 800.0,
       "StopAction": "None",
       "OnOffState": "Off",
-      "Temperature": 21.4,
-      "Value": 21.4,
       "UnitSymbol": "°C",
       "Ratiometric": false,
       "MaxValue": 0.0,
@@ -5172,7 +5132,6 @@
       "Resolution": 0.0,
       "ResolutionIsProportional": false,
       "Filter": null,
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -5203,7 +5162,6 @@
       "Resolution": 0.0,
       "ResolutionIsProportional": false,
       "Filter": null,
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -5224,8 +5182,6 @@
       "MaximumSetpoint": 800.0,
       "StopAction": "None",
       "OnOffState": "Off",
-      "Temperature": 21.4,
-      "Value": 21.4,
       "UnitSymbol": "°C",
       "Ratiometric": false,
       "MaxValue": 0.0,
@@ -5234,7 +5190,6 @@
       "Resolution": 0.0,
       "ResolutionIsProportional": false,
       "Filter": null,
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -5265,7 +5220,6 @@
       "Resolution": 0.0,
       "ResolutionIsProportional": false,
       "Filter": null,
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -5296,7 +5250,6 @@
       "Resolution": 0.0,
       "ResolutionIsProportional": false,
       "Filter": null,
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -5327,7 +5280,6 @@
       "Resolution": 0.0,
       "ResolutionIsProportional": false,
       "Filter": null,
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -5358,7 +5310,6 @@
       "Resolution": 0.0,
       "ResolutionIsProportional": false,
       "Filter": null,
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -5389,7 +5340,6 @@
       "Resolution": 0.0,
       "ResolutionIsProportional": false,
       "Filter": null,
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -5420,7 +5370,6 @@
       "Resolution": 0.0,
       "ResolutionIsProportional": false,
       "Filter": null,
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -5451,7 +5400,6 @@
       "Resolution": 0.1,
       "ResolutionIsProportional": false,
       "Filter": null,
-      "Interpolator": null,
       "Conversion": null,
       "RateOfChange": null,
       "Stable": 0.0,
@@ -6085,12 +6033,12 @@
         "Accumulated": 0
       },
       "ProgressStopwatch": {
-        "IsRunning": true,
-        "Accumulated": 7126699346
+        "IsRunning": false,
+        "Accumulated": 0
       },
       "GraphitizationStopwatch": {
-        "IsRunning": true,
-        "Accumulated": 169855
+        "IsRunning": false,
+        "Accumulated": 0
       },
       "PriorPressure": 160.20000000000002,
       "PressurePeak": 1250,
@@ -6117,12 +6065,12 @@
         "Accumulated": 0
       },
       "ProgressStopwatch": {
-        "IsRunning": true,
-        "Accumulated": 7126241773
+        "IsRunning": false,
+        "Accumulated": 0
       },
       "GraphitizationStopwatch": {
-        "IsRunning": true,
-        "Accumulated": 169851
+        "IsRunning": false,
+        "Accumulated": 0
       },
       "PriorPressure": 201.10000000000002,
       "PressurePeak": 1246,
@@ -6149,12 +6097,12 @@
         "Accumulated": 0
       },
       "ProgressStopwatch": {
-        "IsRunning": true,
-        "Accumulated": 1558170722
+        "IsRunning": false,
+        "Accumulated": 0
       },
       "GraphitizationStopwatch": {
-        "IsRunning": true,
-        "Accumulated": 169851
+        "IsRunning": false,
+        "Accumulated": 0
       },
       "PriorPressure": 87.4,
       "PressurePeak": 1342,
@@ -6181,12 +6129,12 @@
         "Accumulated": 0
       },
       "ProgressStopwatch": {
-        "IsRunning": true,
-        "Accumulated": 7131229764
+        "IsRunning": false,
+        "Accumulated": 0
       },
       "GraphitizationStopwatch": {
-        "IsRunning": true,
-        "Accumulated": 169851
+        "IsRunning": false,
+        "Accumulated": 0
       },
       "GraphitizationStopwatch": null,
       "PriorPressure": 2000.0,
@@ -6214,12 +6162,12 @@
         "Accumulated": 0
       },
       "ProgressStopwatch": {
-        "IsRunning": true,
-        "Accumulated": 7132057271
+        "IsRunning": false,
+        "Accumulated": 0
       },
       "GraphitizationStopwatch": {
-        "IsRunning": true,
-        "Accumulated": 169851
+        "IsRunning": false,
+        "Accumulated": 0
       },
       "GraphitizationStopwatch": null,
       "PriorPressure": 2000.0,
@@ -6247,12 +6195,12 @@
         "Accumulated": 0
       },
       "ProgressStopwatch": {
-        "IsRunning": true,
-        "Accumulated": 7125746766
+        "IsRunning": false,
+        "Accumulated": 0
       },
       "GraphitizationStopwatch": {
-        "IsRunning": true,
-        "Accumulated": 169851
+        "IsRunning": false,
+        "Accumulated": 0
       },
       "GraphitizationStopwatch": null,
       "PriorPressure": 2000.0,
@@ -6315,6 +6263,8 @@
         "CT",
         "VTT",
         "MC",
+        "MCP1",
+        "MCP2",
         "Split",
         "GM",
         "VM"
@@ -7350,37 +7300,37 @@
           "Name": "pAmbient",
           "Resolution": 0.5,
           "Format": "0.0",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "tAmbient",
           "Resolution": 0.25,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "tGM",
           "Resolution": -1.0,
-          "Format": "0",
-          "Source": null
+          "Format": "0.0",
+          "Path": null
         },
         {
           "Name": "tMC",
           "Resolution": -1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "tLNOverflow",
           "Resolution": -1.0,
           "Format": "0.0",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "HC1.CJ",
           "Resolution": -1.0,
           "Format": "0.0",
-          "Source": "HeaterController1.ColdJunctionTemperature"
+          "Path": "HeaterController1.ColdJunctionTemperature"
         },
         {
           "Name": "HC2.CJ",
@@ -7409,25 +7359,25 @@
           "Name": "pAmbient",
           "Resolution": -1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "pIM",
           "Resolution": 1.0,
           "Format": "0.0",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "pGM",
           "Resolution": 1.0,
           "Format": "0.0",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "pCT",
           "Resolution": -1.0,
           "Format": "0.0000",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "pTF",
@@ -7438,13 +7388,13 @@
           "Name": "pForeline",
           "Resolution": 0.1,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "pVM1",
           "Resolution": -1.0,
           "Format": "0.00e0",
-          "Source": null
+          "Path": null
         }
       ],
       "ChangeTimeoutMilliseconds": 30000,
@@ -7479,7 +7429,7 @@
           "Name": "pVM1",
           "Resolution": 1.0,
           "Format": "0.00e0",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "pVM1_IG",
@@ -7490,7 +7440,7 @@
           "Name": "pVM1_HP",
           "Resolution": -1.0,
           "Format": "0.00e0",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "pVM1_LP",
@@ -7537,13 +7487,13 @@
           "Name": "TF1",
           "Resolution": 1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "pTF",
           "Resolution": 1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         }
       ],
       "ChangeTimeoutMilliseconds": 30000,
@@ -7561,13 +7511,13 @@
           "Name": "pCT",
           "Resolution": 0.01,
           "Format": "0.000",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "tLN_CT",
           "Resolution": 1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         }
       ],
       "ChangeTimeoutMilliseconds": 30000,
@@ -7585,25 +7535,25 @@
           "Name": "tLN_VTC",
           "Resolution": 1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "tVTC",
           "Resolution": 0.1,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "tVTC_top",
           "Resolution": 1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "tVTC_wire",
           "Resolution": 1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         }
       ],
       "ChangeTimeoutMilliseconds": 30000,
@@ -7621,25 +7571,25 @@
           "Name": "pMC",
           "Resolution": 0.1,
           "Format": "0.000",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "tMC",
           "Resolution": 0.1,
           "Format": "0.000",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "ugCinMC",
           "Resolution": -1.0,
           "Format": "0.000",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "tLN_MC",
           "Resolution": 1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         }
       ],
       "ChangeTimeoutMilliseconds": 30000,
@@ -7657,37 +7607,37 @@
           "Name": "pGR1",
           "Resolution": 1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "pGR2",
           "Resolution": 1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "pGR3",
           "Resolution": 1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "pGR4",
           "Resolution": 1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "pGR5",
           "Resolution": 1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "pGR6",
           "Resolution": 1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         }
       ],
       "ChangeTimeoutMilliseconds": 30000,
@@ -7705,37 +7655,37 @@
           "Name": "tGR1",
           "Resolution": 1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "tGR2",
           "Resolution": 1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "tGR3",
           "Resolution": 1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "tGR4",
           "Resolution": 1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "tGR5",
           "Resolution": 1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "tGR6",
           "Resolution": 1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         }
       ],
       "ChangeTimeoutMilliseconds": 30000,
@@ -7753,43 +7703,43 @@
           "Name": "tLN_GR1",
           "Resolution": 1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "tLN_GR2",
           "Resolution": 1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "tLN_GR3",
           "Resolution": 1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "tLN_GR4",
           "Resolution": 1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "tLN_GR5",
           "Resolution": 1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "tLN_GR6",
           "Resolution": 1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "tLNManifold1",
           "Resolution": 1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         }
       ],
       "ChangeTimeoutMilliseconds": 30000,
@@ -7807,19 +7757,19 @@
           "Name": "tLN_CT",
           "Resolution": 1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "tLN_VTC",
           "Resolution": 1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "tLN_MC",
           "Resolution": 1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "tLN_AP1",
@@ -7831,13 +7781,13 @@
           "Name": "tLNOverflow",
           "Resolution": 1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "tLNManifold1",
           "Resolution": 1.0,
           "Format": "0.00",
-          "Source": null
+          "Path": null
         }
       ],
       "ChangeTimeoutMilliseconds": 30000,
@@ -7855,7 +7805,7 @@
           "Name": "DC5VPower",
           "Resolution": 0.01,
           "Format": "0.000",
-          "Source": null
+          "Path": null
         },
         {
           "Name": "DC15VPower",
@@ -7866,7 +7816,7 @@
           "Name": "DC5VMainsDetect",
           "Resolution": 0.5,
           "Format": "0.000",
-          "Source": null
+          "Path": null
         }
       ],
       "ChangeTimeoutMilliseconds": 60000,
@@ -8223,7 +8173,7 @@
     "Name": "Power",
     "DC5V": "DC5VPower",
     "MainsDetect": "DC5VMainsDetect",
-    "MainsDetectMinimumVoltage": 0.0,
+    "MainsDetectMinimumVoltage": 4.0,
     "MilliSecondsMainsDownLimit": 5000
   },
   "CegsPreferences": {
@@ -8252,7 +8202,7 @@
     "DefaultParameters": [
       {
         "ParameterName": "PressureOverAtm",
-        "Value": 780.0,
+        "Value": 770.0,
         "Description": "Usually about 10 Torr over standard; should be slightly greater than the atmospheric pressure at any lab that will handle gas samples in septum-sealed vials (including external labs)."
       },
       {
@@ -8422,7 +8372,7 @@
       },
       {
         "ParameterName": "MaximumSampleMicrogramsCarbon",
-        "Value": 1150.0,
+        "Value": 1000.0,
         "Description": "Discard CO2 splits as long as the sample contains more than this much carbon."
       },
       {
