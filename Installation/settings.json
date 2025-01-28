@@ -1024,7 +1024,7 @@
       "ResolutionIsProportional": false,
       "Filter": {
         "$type": "AeonHacs.ExponentialFilter, AeonHacs.Core",
-        "Name": null,
+        "Name": "",
         "Description": "",
         "Power": 1.0,
         "StepChange": 0.05
@@ -1049,7 +1049,7 @@
         ]
       },
       "RateOfChange": {
-        "Name": null,
+        "Name": "",
         "Description": "",
         "FilterLength": 13,
         "MaxIntervalMilliseconds": 5000.0,

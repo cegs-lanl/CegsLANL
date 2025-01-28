@@ -143,7 +143,7 @@
                 <wpf:Valve Component="vSplit_d13C" Canvas.Left="743" Canvas.Top="132" />
                 <wpf:Valve Component="vSplit_GM" Canvas.Left="769" Canvas.Top="158" />
             </Canvas>
-            
+
         </DockPanel>
     </Grid>
 </wpf:ControlPanel>
