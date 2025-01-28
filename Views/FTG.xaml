@@ -1,29 +1,29 @@
 ﻿<wpf:View x:Class="CegsLANL.Views.FTG"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-    xmlns:wpf="http://schemas.aeonhacs.com/wpf"
-    mc:Ignorable="d"
-    Background="{x:Null}">
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:wpf="http://schemas.aeonhacs.com/wpf"
+        mc:Ignorable="d"
+        Background="{x:Null}">
 
     <Canvas Width="96" Height="72">
         <wpf:Chamber Data="M0,0 v-26 h-17 M0,0 h-17 M0,0 v26 h-17 M-35,0 h-34" Canvas.Top="6" Canvas.Right="0"
-                Component="FTG" HelpText="FlowThrough Gas" />
+                Component="FTG" />
 
         <wpf:GasSupply Orientation="Left" Canvas.Right="21" Canvas.Top="0"
-                GasName="He" HelpText="Helium gas supply" Valve="vHe_FTG" />
+                GasName="He" Valve="vHe_FTG" AutomationProperties.HelpText="Helium gas supply" />
 
         <wpf:Valve Canvas.Right="21" Canvas.Top="27" d:ValveState="Closed"
-                Component="vFtgFlow" HelpText="FTG flow valve">
+                Component="vFtgFlow">
             <wpf:Restriction Orientation="Horizontal"/>
         </wpf:Valve>
         <wpf:Valve Canvas.Right="73" Canvas.Top="27" d:ValveState="Closed"
-                Component="vFTG_TF" HelpText="FTG-TF valve" />
+                Component="vFTG_TF" />
         <wpf:Stub Orientation="Left" FittingSize="3/8" Canvas.Right="92" Canvas.Top="32" />
 
         <wpf:GasSupply Orientation="Left" Canvas.Right="21" Canvas.Top="52"
-                GasName="O2" HelpText="Oxygen gas supply" Valve="vO2_FTG" />
+                GasName="O2" Valve="vO2_FTG" AutomationProperties.HelpText="Oxygen gas supply" />
     </Canvas>
 
 </wpf:View>

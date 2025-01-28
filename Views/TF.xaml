@@ -1,15 +1,20 @@
 ﻿<wpf:View x:Class="CegsLANL.Views.TF"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-    xmlns:local="clr-namespace:CegsLANL.Views"
-    xmlns:wpf="http://schemas.aeonhacs.com/wpf"
-    mc:Ignorable="d"
-    Background="{x:Null}">
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:local="clr-namespace:CegsLANL.Views"
+        xmlns:wpf="http://schemas.aeonhacs.com/wpf"
+        mc:Ignorable="d"
+        Background="{x:Null}">
+
     <Canvas Width="305" Height="143">
-        <wpf:Union Orientation="Right" Connection1="1/4" Canvas.Left="252" Canvas.Top="129" />
-        <wpf:ConvolutedTubing Data="M0,0 h3 m0,0 h18 m0,0 h3" Canvas.Left="228" Canvas.Top="130" />
+        <wpf:StackingPanel Orientation="Right" Height="19" Canvas.Left="224" Canvas.Top="124"
+                           wpf:View.Component="Section.IP1" Background="Transparent">
+            <wpf:Stub Orientation="Right" />
+            <wpf:ConvolutedTubing Data="M0,0 h3 m0,0 h18 m0,0 h3" />
+            <wpf:Union Orientation="Right" Connection1="1/4" />
+        </wpf:StackingPanel>
 
         <wpf:ConvolutedTubing Data="M0,0 v3 m0,0 c 0,20 0,27.5 22.5,27.5 m0,0 h3" Canvas.Left="107" Canvas.Top="51" />
 
@@ -21,16 +26,16 @@
 
         <wpf:Chamber Component="Section.TF"
             Data="M38,0 v29 M12,12 h52 v17 M38,47 v17 h43 M64,47 v17" Canvas.Left="136" Canvas.Top="69" />
-        <wpf:Stub Orientation="Right" Canvas.Left="224" Canvas.Top="130" />
         <wpf:StackingPanel Width="59" Canvas.Left="133" Canvas.Bottom="74" Spacing="5">
-            <wpf:PressureSensor Type="MKS_722_HP" Component="pTF" HelpText="TF pressure sensor" />
-            <wpf:PressureGauge Component="pTF" HelpText="TF pressure" ContentStringFormat="0.0" />
+            <wpf:PressureSensor Type="MKS_722_HP" Component="pTF" />
+            <wpf:PressureGauge Component="pTF" ContentStringFormat="0.0" />
         </wpf:StackingPanel>
-        
-        <wpf:Valve Component="vTFFlow" HelpText="TF flow valve" Canvas.Top="98" Canvas.Left="153" d:ValveState="Closed" >
+
+        <wpf:Valve Component="vTFFlow" Canvas.Top="98" Canvas.Left="153" d:ValveState="Closed" >
             <wpf:Restriction />
         </wpf:Valve>
-        <wpf:Valve Component="vTFBypass" HelpText="TF bypass valve" Canvas.Top="98" Canvas.Left="179" d:ValveState="Closed" />
-        <wpf:Valve Component="vTF_IP1" HelpText="TF-IP1 valve" Canvas.Left="205" Canvas.Top="124" d:ValveState="Closed" />
+        <wpf:Valve Component="vTFBypass" Canvas.Top="98" Canvas.Left="179" d:ValveState="Closed" />
+        <wpf:Valve Component="vTF_IP1" Canvas.Left="205" Canvas.Top="124" d:ValveState="Closed" />
     </Canvas>
+
 </wpf:View>

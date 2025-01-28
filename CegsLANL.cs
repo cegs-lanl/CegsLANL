@@ -1,8 +1,11 @@
-﻿namespace AeonHacs.Components;
+﻿using static AeonHacs.Notify;
+
+namespace AeonHacs.Components;
 
 public partial class CegsLANL : Cegs
 {
     #region HacsComponent
+
     [HacsConnect]
     protected override void Connect()
     {
@@ -53,9 +56,6 @@ public partial class CegsLANL : Cegs
     #endregion HacsComponents
     #endregion System configuration
 
-    #region Periodic system activities & maintenance
-    #endregion Periodic system activities & maintenance
-
     #region Process Management
 
     protected override void BuildProcessDictionary()
@@ -81,7 +81,13 @@ public partial class CegsLANL : Cegs
 
         // Open line
         ProcessDictionary["Open and evacuate line"] = OpenLine;
-        ProcessDictionary["Open and evacuate TF and VS1"] = OpenTF_VS1;
+        ProcessDictionary["Open and evacuate line and TF"] = OpenLineAndTF;
+        Separators.Add(ProcessDictionary.Count);
+
+        // Sample Process Methods
+        ProcessDictionary["Tube furnace bakeout"] = Bakeout;
+        ProcessDictionary["In situ quartz, day 1"] = Day1;
+        ProcessDictionary["In situ quartz, day 2"] = Day2;
         Separators.Add(ProcessDictionary.Count);
 
         // Main process continuations
@@ -114,6 +120,7 @@ public partial class CegsLANL : Cegs
         ProcessDictionary["Clear collection conditions"] = ClearCollectionConditions;
         ProcessDictionary["Collect until condition met"] = CollectUntilConditionMet;
         ProcessDictionary["Stop collecting"] = StopCollecting;
+        ProcessDictionary["Stop collecting immediately"] = StopCollectingImmediately;
         ProcessDictionary["Stop collecting after bleed down"] = StopCollectingAfterBleedDown;
         ProcessDictionary["Evacuate and Freeze VTT"] = FreezeVtt;
         ProcessDictionary["Admit Dead CO2 into MC"] = AdmitDeadCO2;
@@ -137,6 +144,7 @@ public partial class CegsLANL : Cegs
 
         // General-purpose process control actions
         ProcessDictionary["Wait for timer"] = WaitForTimer;
+        ProcessDictionary["Wait for IP timer"] = WaitIpMinutes;
         ProcessDictionary["Wait for operator"] = WaitForOperator;
         Separators.Add(ProcessDictionary.Count);
 
@@ -153,12 +161,7 @@ public partial class CegsLANL : Cegs
         ProcessDictionary["Backfill TF with He"] = BackfillTF1WithHe;
         ProcessDictionary["Notify to load TF"] = LoadTF;
         ProcessDictionary["Admit O2 to TF"] = AdmitO2toTF;
-        ProcessDictionary["Open TF to IP1"] = OpenTF_IP1;            
-        ProcessDictionary["Start collecting"] = StartCollecting;
-        ProcessDictionary["Clear collection conditions"] = ClearCollectionConditions;
-        ProcessDictionary["Collect until condition met"] = CollectUntilConditionMet;
-        ProcessDictionary["Stop collecting"] = StopCollecting;
-        ProcessDictionary["Stop collecting after bleed down"] = StopCollectingAfterBleedDown;
+        ProcessDictionary["Open TF to IP1"] = OpenTF_IP1;
         Separators.Add(ProcessDictionary.Count);
 
         // Flow control sub-steps
@@ -175,7 +178,6 @@ public partial class CegsLANL : Cegs
         //Separators.Add(ProcessDictionary.Count);
 
         // Utilities (generally not for sample processing)
-        Separators.Add(ProcessDictionary.Count);
         ProcessDictionary["Exercise all Opened valves"] = ExerciseAllValves;
         ProcessDictionary["Close all Opened valves"] = CloseAllValves;
         ProcessDictionary["Exercise all LN Manifold valves"] = ExerciseLNValves;
@@ -184,30 +186,30 @@ public partial class CegsLANL : Cegs
         ProcessDictionary["Measure valve volumes (plug in MCP2)"] = MeasureValveVolumes;
         ProcessDictionary["Measure remaining chamber volumes"] = MeasureRemainingVolumes;
         ProcessDictionary["Check GR H2 density ratios"] = CalibrateGRH2;
+        ProcessDictionary["Calibrate VP He initial manifold pressure"] = CalibrateVPHeP0;
         ProcessDictionary["Measure Extraction efficiency"] = MeasureExtractEfficiency;
         ProcessDictionary["Measure IP collection efficiency"] = MeasureIpCollectionEfficiency;
+        Separators.Add(ProcessDictionary.Count);
 
         // Test functions
-        Separators.Add(ProcessDictionary.Count);
         ProcessDictionary["Test"] = Test;
-        base.BuildProcessDictionary();
     }
 
     #region OpenLine
 
-
     /// <summary>
-    /// Open and evacuate the chambers normally serviced by VacuumSystem1 including the TF
+    /// Open line and TubeFurnace.
     /// </summary>
-    protected virtual void OpenTF_VS1()
+    protected virtual void OpenLineAndTF()
     {
-        ProcessStep.Start("Open and evacuate TF and VS1");
+        var vacuumSystem = TF.VacuumSystem;
+        ProcessStep.Start($"Open and evacuate TF and {vacuumSystem.Name}.");
         TF.Evacuate(IpEvacuationPressure);
         TF_IP1.Open();
         Find<InletPort>("IP1").Open();
-        OpenLine(VacuumSystem1);
+        OpenLine(vacuumSystem);     // Thaws coldfingers.
+        ProcessStep.End();
     }
-
 
     #endregion OpenLine
 
@@ -234,9 +236,7 @@ public partial class CegsLANL : Cegs
 
     #endregion Process Control Properties
 
-
     #region Process Steps
-
 
     /// <summary>
     /// Use a flow of oxygen through the Inlet Port to combust the sample.
@@ -256,7 +256,7 @@ public partial class CegsLANL : Cegs
     protected virtual void BackfillTF1WithHe()
     {
         ProcessStep.Start($"Fill {InletPort.Name} to {Ambient.Pressure:0} Torr He");
-        
+
         // Need to manage FTG gas source valve manually,
         // because we want the shutoff to be
         // downstream of the flow valve.
@@ -276,10 +276,8 @@ public partial class CegsLANL : Cegs
     /// Notify the operator to load the tube furnace and
     /// wait for their 'Ok" to continue.
     /// </summary>
-    protected virtual void LoadTF()
-    {
-        Pause("Ready for operator", "Load the Tube Furnace and seal it closed.");
-    }
+    protected virtual void LoadTF() =>
+        WaitForOperator("Load the Tube Furnace and seal it closed.");
 
     /// <summary>
     /// Evacuate the Inlet Port to 'OkPressure'.
@@ -287,7 +285,7 @@ public partial class CegsLANL : Cegs
     protected override void EvacuateIP()
     {
         ProcessStep.Start($"Evacuate {InletPort.Name}");
-        
+
         if (IpIsTubeFurnace)
             TF_IP1.Open();
         base.EvacuateIP(IpEvacuationPressure);
@@ -327,12 +325,12 @@ public partial class CegsLANL : Cegs
 
     /// <summary>
     /// Start flowing O2 through the Inlet Port.
-    /// TODO: waste through analyzer for RPO samples (not TF, though)
     /// </summary>
     protected virtual void StartFlowThrough(bool trap)
     {
         ProcessStep.Start($"Start flowing O2 through {InletPort.Name}");
 
+        var section = FTG_IP1;
         var gasfm = FTG_TFFlowManager;
         // Need to manage FTG gas source valve manually,
         // because we want the shutoff to be
@@ -340,7 +338,6 @@ public partial class CegsLANL : Cegs
         var o2 = Find<IValve>("vO2_FTG");
         var destination = trap ? IM_FirstTrap : IM;
 
-        var section = FTG_IP1;
 
         ProcessStep.Start($"Isolate and open {section.Name}");
         section.Isolate();
@@ -433,7 +430,7 @@ public partial class CegsLANL : Cegs
         WaitIpFallToSetpoint();
         StopFlowThroughGas();
         TurnOffIpQuartzFurnace();
-        OpenTF_VS1();
+        OpenLineAndTF();
     }
 
     /// <summary>
@@ -472,12 +469,14 @@ public partial class CegsLANL : Cegs
         SetParameter("CollectUntilCtPressureFalls", 4.0);
         CollectUntilConditionMet();
         StopCollecting();
+        TransferCO2FromCTToVTT();
+        ExtractEtc();
         OpenLine();
     }
 
 
     /// <summary>
-    /// General-purpose code tester. Put whatever you want here.
+    /// Tube furnace bakeout procedure.
     /// </summary>
     protected void Bakeout()
     {
@@ -502,18 +501,18 @@ public partial class CegsLANL : Cegs
         OpenLine();
     }
 
-
     #endregion Process Steps
-
 
     #endregion Process Management
 
     #region Test functions
 
+    /// <summary>
+    /// General-purpose code tester. Put whatever you want here.
+    /// </summary>
     protected override void Test()
     {
     }
 
     #endregion Test functions
-
 }
